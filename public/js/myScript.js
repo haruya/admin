@@ -1,4 +1,9 @@
 $(function() {
+  // flash_messageフェードアウト
+  setTimeout(function() {
+    $('#flash_message').fadeOut("slow");
+  }, 500);
+  
   // 権限作成バリデーション
   $('#roleSubmit').click(function() {
     $(this).attr('disabled', 'disabled');
@@ -16,6 +21,7 @@ $(function() {
   });
   // 権限のダイアログを閉じたときの処理
   $('#role').on('hidden.bs.modal', function () {
-	  $('#role #nameErr').remove();
+    $('#role input[name="name"]').val('');
+    $('#role #nameErr').remove();
   });
 });

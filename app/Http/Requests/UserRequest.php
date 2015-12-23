@@ -42,6 +42,7 @@ class UserRequest extends Request {
 			'password.required' => 'パスワードは入力必須です。',
 			'password.between' => 'パスワードは4～32文字以内で入力してください。',
 			'password.confirmed' => 'パスワードが一致しません。',
+			'role_id.required' => '権限は入力必須です。',
 		];
 	}
 
