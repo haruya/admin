@@ -57,7 +57,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title alert alert-success">権限の作成</h4>
       </div>
-      {!! Form::open(['action' => 'UsersController@postRoleCreate', 'id' => 'role_form']) !!}
+      {!! Form::open(['action' => 'UsersController@postRoleCreate', 'id' => 'roleForm']) !!}
       <div class="modal-body">
         <div class="form-group">
           {!! Form::label('name', '権限名', ['class' => 'control-label']) !!}
@@ -66,7 +66,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
-        <input type="button" id="role_submit" class="btn btn-primary" value="作成" />
+        <input type="button" id="roleSubmit" class="btn btn-primary" value="作成" />
       </div>
       {!! Form::close() !!}
     </div>
